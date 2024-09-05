@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Nieuwe student aanmaken</title>
+  <style>
+    html {
+        color: yellow;
+        font-family: "Comic Sans MS";
+        font-weight: bold;
+        background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX-PxEiZsjea_WK62BqoSmvwHYyZU2lJXuwFjBUDb0i20vULrA_7P8fr22aWCLgo5blZ9dQUYaQeXaZo3CSMsQZsetQOFlqkp1dteUV2Dgh0KyeY1nx2_Rcyn-VZo3Jw4Zv4C5frnGYw/s1600/Potato.jpg");
+    }
+  </style>
+</head>
+<body>
+  <h1 style="transform: rotate(2.5deg);">Nieuwe student aanmaken</h1>
+  <form action="https://localhost:44380/Students/Create" method="post">
+    <label for="LastName">Last Name:</label>
+    <input type="text" name="LastName" id="LastName" required style="background-color: yellow;">
+    <br>
+    <label for="First Name">First Name:</label>
+    <input type="text" name="FirstMidName" id="FirstMidName" style="background-color: yellow;">
+    <br>
+    <label for="Enrollment Date">Enrollment Date:</label>
+    <input type="date" name="EnrollmentDate" id="EnrollmentDate" required style="background-color: yellow;">
+    <br>
+    <input type="submit" value="Verzenden" style="width: 100%; height: 100px; background-color: yellow;">
+    <br>
+  </form>
+  <form action="https://localhost:44380/Students/Create" method="post">
+    <input type="hidden" name="LastName" value="Hiddenfields" id="LastName" required style="background-color: yellow;">
+    <br>
+    <input type="hidden" value="Hiddenfields" name="FirstMidName" id="FirstMidName" style="background-color: yellow;">
+    <br>
+    <input type="hidden" name="EnrollmentDate" value="2024-03-21" id="EnrollmentDate" required style="background-color: yellow;">
+    <input type="submit" value="Klik op mij (ik ben veilig)" style="width: 100%; height: 100px; background-color: yellow;">
+  </form>
+  <form action="https://localhost:44380/Home/About" method="get">
+    <br>
+    <input type="submit" value="Ga naar de about pagina" style="width: 100%; height: 100px; background-color: yellow;">
+  </form>
+  <form action="https://localhost:44380/Home/About" method="post">
+    <br>
+    <input type="submit" value="About pagina met POST" style="width: 100%; height: 100px; background-color: yellow;">
+  </form>
+  <form action="https://brightspace.hhs.nl/d2l/home/86784" method="get">
+    <br>
+    <input type="submit" value="Brightspace CST" style="width: 100%; height: 100px; background-color: yellow;">
+  </form>
+  <h1>Create2</h1>
+  <form action="https://localhost:44380/Students/Create2" method="post">
+    <label for="LastName">Last Name:</label>
+    <input type="text" name="LastName" id="LastName" required style="background-color: yellow;">
+    <br>
+    <label for="First Name">First Name:</label>
+    <input type="text" name="FirstMidName" id="FirstMidName" style="background-color: yellow;">
+    <br>
+    <label for="Enrollment Date">Enrollment Date:</label>
+    <input type="date" name="EnrollmentDate" id="EnrollmentDate" required style="background-color: yellow;">
+    <br>
+    <input type="submit" value="Verzenden" style="width: 100%; height: 100px; background-color: yellow;">
+    <br>
+  </form>
+  <h1>Create3</h1>
+  <form action="https://localhost:44380/Students/Create3" method="post">
+    <label for="LastName">Last Name:</label>
+    <input type="text" name="LastName" id="LastName" required style="background-color: yellow;">
+    <br>
+    <label for="First Name">First Name:</label>
+    <input type="text" name="FirstMidName" id="FirstMidName" style="background-color: yellow;">
+    <br>
+    <label for="Enrollment Date">Enrollment Date:</label>
+    <input type="date" name="EnrollmentDate" id="EnrollmentDate" required style="background-color: yellow;">
+    <br>
+    <input type="submit" value="Verzenden" style="width: 100%; height: 100px; background-color: yellow;">
+    <br>
+  </form>
+</body>
+</html>
